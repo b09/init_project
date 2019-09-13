@@ -1,0 +1,8 @@
+# the task is confusing.
+# dns servers are queried by being given a text name of a website, and they respond
+# with a ip address for the website you are looking for.
+# the task is to make a request to a public dns server by providing the name 
+# of the website AND the ip address of the DNS server (the address where the query is directed)
+nslookup slash.org 8.8.8.8
+nslookup slash.org 1.1.1.1
+nslookup slash.org 9.9.9.9

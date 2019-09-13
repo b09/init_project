@@ -1,0 +1,10 @@
+8. Use a Specific DNS server Using dig @dnsserver
+
+By default dig uses the DNS servers defined in your /etc/resolv.conf file.
+
+If you like to use a different DNS server to perform the query, specify it in the command line as @dnsserver.
+https://www.thegeekstuff.com/2012/02/dig-command-examples/
+
+answer: dig @resolver1.opendns.com ANY myip.opendns.com +short
+
+from: https://unix.stackexchange.com/questions/22615/how-can-i-get-my-external-ip-address-in-a-shell-script

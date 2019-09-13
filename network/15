@@ -1,0 +1,2 @@
+alter the host file located in /private/etc/hosts and include hostname 
+and ip address to which to redirect

@@ -1,0 +1,2 @@
+whois examplewebsite.com | grep 'Registrar:'
+the above command will find the name of the registrar, who is the provider of the domain name
