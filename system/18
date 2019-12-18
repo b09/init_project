@@ -1,0 +1,7 @@
+# to get pid
+ps -aux | grep ssh
+
+# to kill
+kill -9 <pid>
+
+# command

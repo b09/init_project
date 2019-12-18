@@ -1,0 +1,5 @@
+kill -9 <pid>
+
+# -9 = a signal number, which in this case is a non-ignorable kill command
+
+# command

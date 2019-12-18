@@ -1,3 +1,5 @@
 ipconfig getoption en0 domain_name
 
 http://support.moonpoint.com/os/os-x/dhcp-info.php
+
+# a command output

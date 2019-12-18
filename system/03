@@ -1,0 +1,4 @@
+to permanently change the hostname, the file in /etc/hostname must be edited
+with "sudo <editor> /etc/hostname"
+
+# a deduction, written in your own words

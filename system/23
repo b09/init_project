@@ -1,0 +1,5 @@
+su <other user>
+
+# su -- substitute user identity
+# check with whoami
+# a deduction, written in your own words

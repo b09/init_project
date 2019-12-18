@@ -6,3 +6,5 @@
 nslookup slash.org 8.8.8.8
 nslookup slash.org 1.1.1.1
 nslookup slash.org 9.9.9.9
+
+# command

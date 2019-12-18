@@ -1,0 +1,6 @@
+cron is a program that runs background process during a predefined schedule
+
+Though a very useful tool, in Apple products it has been supplanted by the 
+launchd program, written by Dave Zarzychi
+
+# a deduction, written in your own words

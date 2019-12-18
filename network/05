@@ -1,3 +1,5 @@
 dig slash16.org
 
 dig slash16.org | grep -A 4 'ANSWER SECTION'
+
+# command

@@ -1,0 +1,8 @@
+sudo du -shc /var/*
+
+# du = estimate file space usage
+# -s = display only total for each argumnet
+# -h = human readable format
+# -c = produce grand total
+
+# command

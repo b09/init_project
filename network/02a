@@ -1,3 +1,5 @@
 ifconfig | grep broadcast | awk -F 'broadcast ' '{print $2}'
 or
 ifconfig | awk -F 'broadcast ' '{print $2}' | grep .
+
+# command
