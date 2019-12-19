@@ -1,5 +1,5 @@
-alter the host file located in /private/etc/hosts and include hostname 
-and ip address to which to redirect, in this case 46.19.122.85
+alter the host file located in /etc/hosts and include hostname 
+and ip address to which to redirect, in this case intra.42.fr and 46.19.122.85.
 on a non-apple system, it would be /etc/hosts that would be edited
 
 

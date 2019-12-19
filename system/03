@@ -1,4 +1,5 @@
 to permanently change the hostname, the file in /etc/hostname must be edited
-with "sudo <editor> /etc/hostname"
+with "sudo <editor> /etc/hostname" and the name of the localhost must be changed
+to the desired new name
 
 # a deduction, written in your own words

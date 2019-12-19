@@ -1,3 +1,4 @@
-systemctl -at service
+ls /etc/rc*.d | grep 'S01*'
 
+# as explained here https://unix.stackexchange.com/questions/83748/the-rc0-d-rc1-d-directories-in-etc
 # command

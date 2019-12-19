@@ -1,6 +1,8 @@
 the rsa keys are generated with a command which prompts where they should be
-stored. by default, they will be stored in /home/<root home>/.ssh/id_rsa
+stored. by default, they will be stored in /home/<root home>/.ssh/id_rsa but
+they should be in ~/.ssh/authorized_keys, which can be made when the rsa keys
+are made
 
-simple cat /home/bprado/.ssh/id_rsa
+simply cat /home/bprado/.ssh/id_rsa
 
 # a deduction, written in your own words

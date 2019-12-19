@@ -1,3 +1,6 @@
 useradd <username>
+# although, the command adduser is more efficient command though some distributions
+# do not have that command
+# https://linuxhandbook.com/useradd-vs-adduser/
 
 # command

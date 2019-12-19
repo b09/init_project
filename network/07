@@ -2,6 +2,6 @@
 # with a ip address for the website you are looking for.
 # the task is to make a request to a public dns server by providing the name 
 # of the website AND the ip address of the DNS server (the address where the query is directed)
-nslookup slash.org 8.8.8.8
+nslookup slash16.org 8.8.8.8
 
 # command

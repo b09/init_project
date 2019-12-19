@@ -1,4 +1,5 @@
-# yiaddr: 	The IP address assigned to the specified network interface on the system from which the command was issued.
+# yiaddr: 	The IP address assigned to the specified network interface on the 
+# system from which the command was issued.
 # ipconfig getpacket en0
 # or 
 ipconfig getpacket en0 | grep yiaddr | cut -d " " -f3

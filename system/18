@@ -1,5 +1,5 @@
 # to get pid
-ps -aux | grep ssh
+ps -aux | grep sshd
 
 # to kill
 kill -9 <pid>
