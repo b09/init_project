@@ -1,4 +1,4 @@
 #https://stackoverflow.com/questions/6591375/ifconfig-and-interfaces
-find regex of bash command to extract en1 from ifconfig
-
+# regex of bash command to extract en1 from ifconfig
+ifconfig en1 | grep ether | cut -d " " -f2
 # command

@@ -1,0 +1,9 @@
+echo "Please provide username to be deleted"
+read USER_NAME
+if [ -n "$USER_NAME" ]
+then
+    sudo deluser --remove-home $USER_NAME
+    echo "$USER_NAME has been removed or was not in list"
+else
+    exit
+fi

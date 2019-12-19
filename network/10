@@ -1,2 +1,4 @@
+traceroute -m10 slash16.org
+
 
 # command

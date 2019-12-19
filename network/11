@@ -1,2 +1,5 @@
+the device linking the local network to the outside world is the router
+and the routers ip address is the second line in the output of the command
+'tracecroute <website>', which is 10.60.1.1
 
 # deduction written in own words

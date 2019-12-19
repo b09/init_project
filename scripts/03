@@ -1,0 +1,37 @@
+HOME="http://roomselector.studentexperience.nl/plattegrond.php?pagina=2&"
+GRND=$HOME"begane-grond"
+FRST=$HOME"eerste-verdieping"
+SCND=$HOME"tweede-verdieping"
+THRD=$HOME"derde-verdieping"
+FRTH=$HOME"vierde-verdieping"
+today=`date '+%Y_%m_%d__%H_%M_%S'`;
+
+arr=(GRND FRST SCND THRD FRTH)
+
+for x in "${arr[@]}"; do
+    curl ${!x} -L > empty_$x.html
+	sleep .3
+done
+for (( i=0; i<7200; i++)); do
+	for x in "${arr[@]}"; do	
+	# iterate thru different websites
+		curl ${!x} -L > current_$x.html
+		sleep .3
+		if [ $? -ne 0 ]; then
+			echo "Request failed, skipping..."
+		else
+			diff current_$x.html empty_$x.html > diff_file.txt
+			if [ -s diff_file.txt ]; then
+				echo "Room available on $x floor. \nCheck this website:\n ${!x} \n" > warning.txt
+				cat warning.txt | mail -s "ROOM!!" constantcruise@protonmail.com leire.ag@aol.com
+				cat diff_file.txt > historical/diff_keep_change$today.txt
+				open historical/diff_keep_change$today.txt
+				open -a firefox ${!x}
+				mv current_$x.html > historical/current_$x$today.html
+			fi
+		fi
+	rm diff_file.txt
+	done
+	echo "\n\ntimes running $i, will run until 12:00\n"
+done
+

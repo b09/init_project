@@ -1,4 +1,5 @@
 /var/run/resolv.conf
-
+#it is generated and contained in the /etc/resolv.conf file
+cat /etc/resolv.conf
 
 # deduction written in own words

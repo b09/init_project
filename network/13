@@ -1,5 +1,7 @@
-ipconfig getoption en0 domain_name
+# ipconfig getoption en0 domain_name... only provides codam.nl
 
-http://support.moonpoint.com/os/os-x/dhcp-info.php
+sh network/12 | nslookup | grep name | cut -d " " -f3
+
+# http://support.moonpoint.com/os/os-x/dhcp-info.php
 
 # a command output
