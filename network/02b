@@ -1,2 +1,10 @@
+# ping -c2 `ip a | awk '/inet / {print $4}' | grep .` | awk '/from / {print $4}' | arp -a | awk '/codam/ {print $2}' | tr -d '()'
+ 
+ping -c2 `ip a | awk '/inet / {print $4}' | grep .` | awk '/from / {print $4}' | tr -d ':'
 
+# ping with count 2 to address
+# provided by ip for address a (current machine)
+# remove empty lines with grep
+# returned value is cleaned with awk
+# trailing colon is removed with trim command tr
 # command
