@@ -1,5 +1,17 @@
-su <other user>
+In the VM, a user has to be made as follows:
+adduser <newuser>
+A series of questions are asked, one of which is the password
+for the new user. Be sure to keep that password for later use.
+On the Mac, login through the normal ssh process, but include
+the username of the new user:
+ssh -p <port> <newuser>@<hostname>
+ssh -p 4242 surfaceplate@localhost
+A request will be made for the newuser's password. If the
+password is correctly inputed, a ssh connection will have been
+established, which can be verified by use of the whoami command
 
-# su -- substitute user identity
+On a gui app for ssh, select a user from the list of available
+users, and when prompted, input the correct password.
+
 # check with whoami
 # a deduction, written in your own words

@@ -1,3 +1,8 @@
-ssh -p 22 bprado@localhost
+ssh -p 4242 bprado@localhost
 
+# ensure that ssh service has been started on both machines,
+# in this case the Mac OSX and VM Debian.
+# "launchctl start ssh" on Mac works
+# "sudo service ssh start" on the Debian
+# "exit" when closing connection
 # command
