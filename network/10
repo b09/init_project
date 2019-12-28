@@ -1,4 +1,4 @@
-traceroute -m10 slash16.org
+traceroute -m24 slash16.org
 
 
 # command

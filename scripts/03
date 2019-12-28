@@ -1,3 +1,4 @@
+#!/bin/sh
 HOME="http://roomselector.studentexperience.nl/plattegrond.php?pagina=2&"
 GRND=$HOME"begane-grond"
 FRST=$HOME"eerste-verdieping"

@@ -1,6 +1,5 @@
-useradd <username>
-# although, the command adduser is more efficient command though some distributions
-# do not have that command
+addusser <username>
+# the command useradd is sometimes used, though it is a less efficient command
 # https://linuxhandbook.com/useradd-vs-adduser/
 
 # command
