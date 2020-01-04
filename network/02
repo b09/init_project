@@ -2,7 +2,7 @@
 # ifconfig | grep broadcast | awk -F 'broadcast ' '{print $2}'
 # or
 # ifconfig | awk -F 'broadcast ' '{print $2}' | grep .
-ip a | awk '/inet / {print $4}' | grep .
+# ip a | awk '/inet / {print $4}' | grep .
 
 # command
 
@@ -11,7 +11,7 @@ ip a | awk '/inet / {print $4}' | grep .
 # ping -c2 `ip a | awk '/inet / {print $4}' | grep .` | awk '/from / {print $4}' | arp -a | awk '/codam/ {print $2}' | tr -d '()'
 
 # 02b
-ping -c2 `ip a | awk '/inet / {print $4}' | grep .` | awk '/from / {print $4}' | tr -d ':'
+ ping -c2 `ip a | awk '/inet / {print $4}' | grep .` | awk '/from / {print $4}' | tr -d ':'
 
 # ping with count 2 to address
 # provided by ip for address a (current machine)
